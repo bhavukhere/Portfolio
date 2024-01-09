@@ -1,0 +1,77 @@
+.fourth .contact {
+    margin-top: 180px;
+    margin-left: 5vw;
+    font-size: 40px;
+    text-align: center;
+}
+
+.fourth .detail {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 80px;
+    margin: 40px;
+
+}
+
+.detail p i {
+    color: #ff004f;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+    ;
+
+
+}
+
+.detail p {
+    font-size: 25px;
+}
+
+.detail p i:hover {
+    -webkit-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+
+.detail a {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
+
+}
+
+.detail a:hover {
+    /* transform: translateY(-3px); */
+    color: rgb(217, 93, 93);
+
+}
+
+@media screen and (max-width:431px) {
+
+    .fourth .contact{
+        margin-left: 190px;
+    }
+    .fourth .detail{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 50px;
+        margin-left: 190px;
+    }
+    .detail p{
+        font-size: 20px;
+    }
+}
