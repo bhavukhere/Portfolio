@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="style.css/nav.css">
+    <link rel="stylesheet" href="style.css/home.css">
+    <link rel="stylesheet" href="style.css/projects.css">
+    <link rel="stylesheet" href="style.css/about1.css">
+    <link rel="stylesheet" href="style.css/contact.css">
+    <script src="https://kit.fontawesome.com/9abaab34a2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="bround">
+        <img src="assests/abstract-uv-ultraviolet-light-composition.jpg" alt="">
+    </div>
+    <section id="first">
+        <header id="nav">
+            <nav>
+                <div class="left">
+                    <div class="portfolio-title">&nbsp;BHAVUK'S PORTFOLIO</div>
+    
+                </div>
+    
+                </div>
+                <div class="right">
+                    <ul id="sidemenu">
+                        <li><a href="#first">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#fourth">Contact Me</a></li>
+                        <li><a href="#second">Project</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </div>
+            </nav>
+        </header>
+        <section class="First">
+            
+           
+            <div class="leftsection">
+                <div class="me">
+                    Hi, My name is
+                    <div class="pink"> Bhavuk
+                    </div>
+                    and I am a
+                    <span id="element"></span>
+                    <div>who is exploring the World of Programming.🧑‍💻
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <a href="resume/Bhavuk (4).pdf" download><button class="button"
+                            style="vertical-align:middle"><span>Resume</span></button></a>
+                    <a href="https://github.com/bhavukhere" target="_blank"><button class="button"
+                            style="vertical-align:middle"><span>Github </span></button></a>
+                </div>
+            </div>
+
+        </section>
+    </section>
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Hodophile', 'LifeLong Learner', 'Passionate Web Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+
+    <h1>My Projects</h1>
+    <section id="second">
+        <section class="second">
+
+            <div class="cards">
+                <div class="flip-card1">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="assests/AI.webp" alt="Avatar" style="width:350px;height:270px;">
+                        </div>
+                        <div class="back">
+                            <a href="https://github.com/bhavukhere/Virtual-Assistant" target="_blank">
+                                <h1>Github</h1>
+                            </a>
+                            <p>Voice Assistant-(Similar to Alexa or Siri)
+                            </p>
+                            <p>Using Python</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card2">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="assests/gym..png" alt="Avatar" style="width:350px;height:270px;">
+                        </div>
+                        <div class="back">
+                            <a href="https://github.com/bhavukhere/Portfolio" target="_blank">
+                                <h1>Github</h1>
+                            </a>
+                            <p>Personal Portfolio</p>
+                            <p>Using HTML, CSS & JS</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="flip-card3">
+                    <div class="inner">
+                        <div class="front">
+                            <img src="assests/AI.webp" alt="Avatar" style="width:350px;height:270px;">
+                        </div>
+                        <div class="back">
+                            <a href="">
+                                <h1>Github</h1>
+                            </a>
+                            <p>Gym Membership Website</p>
+                            <p>In Progress</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </section>
+
+    <section id="about">
+
+        <div class="container">
+            <div class="row">
+                <div class="column1">
+                    <img height="450px" width="363px" src="assests/IMG_20240215_180006_939.jpg" alt="image">
+                </div>
+
+                <div class="column2">
+
+                    <h1 class="subtitle">About Me</h1>
+                    <div class="me1">
+                        <p>Hii, I am <span style="color:  rgb(58, 90, 197);">Bhavuk</span>, a Web Developer who loves to
+                            drink <span style="color:  rgb(58, 90, 197);">Coffee ☕</span> while coding.</p>
+                    </div>
+                    <div class="tab_titles">
+                        <div class="tab_links active_link light" onclick="opentab('skills')">My Skills</div>
+                        <div class="tab_links light" onclick="opentab('Education')">Education</div>
+                        <div class="tab_links light" onclick="opentab('hobbies')">Hobbies</div>
+
+                    </div>
+                    <div class="tab_contents active_tab" id="skills">
+                        <ul>
+                            <li>Python <span><br>OOPS</span></li>
+                            <li>Web Deveopment <span><br>HTML <br>CSS <br>Java Script</span></li>(Familier With Node.js
+                            and Django- Python Frame Work)
+                            <li>MySqL</li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="Education">
+                        <ul>
+                            <li>M.Sc(IT) (2023)<span><br>Ravinder Nath Tagore University</span></li>
+                            <li>B.Sc(CS) (2021)<span><br>Chaudhary Devi Lal University</span></li>
+                            <li>10th ,12th<span><br>CBSE, New Delhi</span></li>
+                            <li>IELTS Certification<span><br>Overall 7 bands (Including 7 bands in Speaking)</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab_contents" id="hobbies">
+                        <ul>
+                            <li>Cricket</li>
+                            <li>Scientific Movies</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var tab_links = document.getElementsByClassName("tab_links");
+                var tab_contents = document.getElementsByClassName("tab_contents");
+
+                function opentab(tabname) {
+                    for (tab_link of tab_links) {
+                        tab_link.classList.remove("active_link");
+                    }
+                    for (tab_content of tab_contents) {
+                        tab_content.classList.remove("active_tab");
+                    }
+                    event.currentTarget.classList.add("active_link");
+                    document.getElementById(tabname).classList.add("active_tab");
+                }
+
+            </script>
+            <script>
+                var sidemenu = document.getElementById("sidemenu")
+                function openmenu() {
+                    sidemenu.style.right = "0"
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px"
+                }
+            </script>
+
+    </section>
+    <section id="fourth">
+        <section class="fourth">
+
+            <div class="contact">Contact Me</div>
+            <div class="detail">
+                <p> <i class="fa-solid fa-envelope"></i> bhavuk321@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +918607648227</p>
+                <a href="https://github.com/bhavukhere" target="_blank">
+                    <p> <i class="fa-brands fa-square-github"></i> Github</p>
+                </a>
+                <a href="https://www.linkedin.com/in/bhavuk-chhabra-248341246/" target="_blank"><p><i class="fa-brands fa-linkedin-in"></i> LinkedIn</p></a>
+            </div>
+
+        </section>
+
+    </section>
+
+</body>
+
+</html>
